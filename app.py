@@ -5,8 +5,8 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the trained model and Quantile Transformer
-model = joblib.load("./readmission_model1.pkl")
-quantile_transformer = joblib.load("./quantile_transformer.pkl")
+model = joblib.load("readmission_model1.pkl")
+quantile_transformer = joblib.load("quantile_transformer.pkl")
 
 def preprocess_input(data):
     """
